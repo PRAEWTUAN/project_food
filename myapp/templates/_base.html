@@ -1,0 +1,54 @@
+{% load compress %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Untitled{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&family=Mitr:wght@300;400;600&family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-orange-500 py-4 shadow-md">
+        <div class="container mx-auto flex items-center">
+            <!-- Menu -->
+            <nav class="flex space-x-6 mr-6">
+                <div class="flex items-center">
+                    <img src="{% static 'image/thai-food.png' %}" alt="Logo" class="h-10 w-10 mr-2">
+                    <h1 class="text-white text-2xl font-bold">อาหารพื้นเมือง</h1>
+                </div>
+                
+                <a href="/" class="flex items-center text-white text-lg hover:text-gray-200 font-sarabun">
+                    หน้าแรก
+                </a>
+                <a href="/cal/" class="flex items-center text-white text-lg hover:text-gray-200 font-sarabun">
+                    ตารางเทียบแคลอรี่
+                </a>
+                <a href="/profile/" class="flex items-center text-white text-lg hover:text-gray-200 font-sarabun">
+                    ผู้จัดทำ
+                </a>
+            </nav>
+            <!-- Logo -->
+        </div>
+    </header>
+
+    <main class="flex items-center justify-center mt-8">
+        <div class="text-center font-prompt">
+            <h5 class="font-semibold">
+                <u>อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</u>
+            </h5>
+        </div>
+    </main>
+
+    {% block content %}
+    {% endblock %}
+</body>

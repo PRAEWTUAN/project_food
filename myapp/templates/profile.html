@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}Profile | Food{% endblock %}
+{% block content %}
+
+<!-- Profile Container -->
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-300">
+        <!-- Profile Picture -->
+        <img class="w-full h-64 object-cover" src="{% static 'image/profile.jpg' %}" alt="Avatar">
+
+        <!-- Profile Details -->
+        <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">นางสาว อริสา บัณฑิตย์</h2>
+            <p class="mt-2 text-gray-600">นักศึกษาสาขาเทคโนโลยีสารสนเทศและการสื่อสาร คณะวิทยาศาสตร์
+                มหาวิทยาลัยอุบลราชธานี</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-orange-500 text-white text-sm rounded-full">Unity</span>
+                <span class="px-3 py-1 bg-red-500 text-white text-sm rounded-full">MySQL</span>
+                <span class="px-3 py-1 bg-yellow-500 text-white text-sm rounded-full">PHP</span>
+                <span class="px-3 py-1 bg-green-500 text-white text-sm rounded-full">React</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

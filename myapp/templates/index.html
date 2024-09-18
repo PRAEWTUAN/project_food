@@ -1,0 +1,52 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}Home | Food{% endblock %}
+
+{% block content %}
+<div class="container mx-auto mt-10">
+    <h1 class="text-4xl font-bold text-center mb-10 text-gray-700">อาหารพื้นเมืองจังหวัดอุบลราชธานี</h1>
+
+    <div class="flex justify-center flex-wrap gap-8"> <!-- ใช้ justify-center และ gap สำหรับการจัดวาง -->
+        <div class="food-item bg-white p-6 rounded-lg shadow-md w-80 text-center">
+            <img src="{% static 'image/food1/card_07.jpg' %}" alt="อาหาร 1"
+                class="rounded-full mb-4 w-40 h-40 mx-auto object-cover">
+            <h2 class="text-xl font-semibold mb-2 font-mitr">อู๋หน่อไม้พุงปลา</h2>
+            <p class="text-gray-600 mb-4 font-sarabun"> อุ๋หน่อไม้พุงปลา เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ
+                ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น
+                มีความโดดเด่นและมีความเป็นเอกลักษณ์ของจังหวัดอุบลราชธานี อุ๋เป็นอาหารพื้นเมืองที่มีลักษณะคล้ายแกงอ่อม
+                แต่วิธีการทำจะใส่น้ำในปริมาณที่น้อยกว่า ส่วนใหญ่นิยมทำกับพุงปลา</p>
+            <a href="/food1/"
+                class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-orange-600 font-sarabun">เรียนรู้เพิ่มเติม</a>
+        </div>
+
+        <div class="food-item bg-white p-6 rounded-lg shadow-md w-80 text-center">
+            <img src="{% static 'image/food2/card-08.jpg' %}" alt="อาหาร 2"
+                class="rounded-full mb-4 w-40 h-40 mx-auto object-cover">
+            <h2 class="text-xl font-semibold mb-2 font-mitr">ลาบปลาคัง</h2>
+            <p class="text-gray-600 mb-4 font-sarabun"> ลาบปลาคัง เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น
+                ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น
+                มีความโดดเด่นและมีความเป็นเอกลักษณ์ของจังหวัดอุบลราชธานี
+                เป็นต้นตำรับเมนูสมุนไพรโบราณที่มีมาช้านานทั้งในเรื่องของรสชาติที่กลมกล่อม
+                เครื่องปรุงล้วนเป็นสมุนไพรจากธรรมชาติ มีคุณค่าทางสมุนไพรสูง เป็นอาหารพื้นเมืองที่มีส่วนประกอบหลัก คือ
+                เนื้อปลาคัง ซึ่งเป็นปลาธรรมชาติจากลุ่มแม่น้ำโขง เนื้อปลามีคุณค่าทางโภชนาการ อุดมไปด้วยโปรตีนสูง ไขมันต่ำ
+                และจำเป็นต่อร่างกาย ป้องกันการอุดตันในเส้นเลือด โรคหัวใจ และเส้นเลือดในสมองแตก </p>
+            <a href="/food2/"
+                class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-orange-600 font-sarabun">เรียนรู้เพิ่มเติม</a>
+        </div>
+
+        <div class="food-item bg-white p-6 rounded-lg shadow-md w-80 text-center">
+            <img src="{% static 'image/food3/card-09.jpg' %}" alt="อาหาร 3"
+                class="rounded-full mb-4 w-40 h-40 mx-auto object-cover">
+            <h2 class="text-xl font-semibold mb-2 font-mitr">แกงอ่อมหอยขม</h2>
+            <p class="text-gray-600 mb-4 font-mitr">แกงอ่อมหอยขม เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น
+                ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น
+                เป็นแกงอ่อมอาหารพื้นเมืองที่อุดมไปด้วยคุณค่าทางโภชนาการเพราะส่วนประกอบหลักส่วนใหญ่เป็นผักและสมุนไพรพื้นบ้านนานาชนิดเป็นความผสมผสานที่ลงตัวระหว่างชนิดของอาหาร
+                และเครื่องปรุง มีเสน่ห์ของความเป็นไทย ต้นตำรับเมนูสมุนไพรโบราณที่มีมาช้านานของจังหวัดอุบลราชธานี
+                โดยการนำหอยขมหรือหอยจุ๊บที่อยู่ในแหล่งน้ำตามธรรมชาติ มีคุณค่าทางโภชนาการเป็นแหล่งโปรตีน และคอลาเจน
+                ที่มีประโยชน์ต่อร่างกาย </p>
+            <a href="/food3/"
+                class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-orange-600 font-sarabun">เรียนรู้เพิ่มเติม</a>
+        </div>
+    </div>
+{% endblock %}
